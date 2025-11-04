@@ -13,9 +13,11 @@
       .dock {
         position: sticky;
         bottom: 0;
-        padding-bottom: env(safe-area-inset-bottom);
       }
       .dock__inner {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .dock__content {
         background: #ccc;
       }
     </style>
@@ -24,7 +26,9 @@
     <div class="filler"></div>
     <div class="dock">
       <div class="dock__inner">
-        Impacted element
+        <div class="dock__content">
+          Impacted element
+        </div>
       </div>
     </div>
   </body>
