@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <style>
+      .filler {
+        height: 500vh;
+      }
+      .dock {
+        position: sticky;
+        bottom: 0;
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .dock__inner {
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="filler"></div>
+    <div class="dock">
+      <div class="dock__inner">
+        Impacted element
+      </div>
+    </div>
+  </body>
+</html>
